@@ -1,0 +1,30 @@
+---
+apiVersion: litmuschaos.io/v1alpha1
+kind: ChartServiceVersion
+metadata:
+  name: http-delay
+  version: 0.1.0
+  annotations:
+    categories: Istio
+    vendor: Custom
+spec:
+  displayName: Http Delay
+  categoryDescription: |
+    Http-delay fault ...
+  keywords:
+    - Istio
+  platforms:
+    - GKE
+    - Minikube
+    - Packet(Kubeadm)
+    - EKS
+  maintainers:
+    - name: Rogério Brito
+      email: contact@rogeriofbrito.dev
+  minKubeVersion: 1.12.0
+  labels:
+    app.kubernetes.io/component: chartserviceversion
+    app.kubernetes.io/version: ci
+  icon:
+    - base64data: ""
+      mediatype: ""
