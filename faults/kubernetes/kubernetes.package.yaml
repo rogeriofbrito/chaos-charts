@@ -52,6 +52,9 @@ faults:
   - name: docker-service-kill
     CSV: docker-service-kill.chartserviceversion.yaml
     desc: "docker-service-kill"
+    - name: http-delay
+    CSV: http-delay.chartserviceversion.yaml
+    desc: "http-delay"
   - name: pod-autoscaler
     CSV: pod-autoscaler.chartserviceversion.yaml
     desc: "pod-autoscaler"

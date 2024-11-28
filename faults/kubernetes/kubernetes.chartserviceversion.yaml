@@ -64,6 +64,9 @@ spec:
     - name: docker-service-kill
       description: It injects docker-service-kill chaos in a Kubernetes pod.
       displayName: "Docker Service Kill"
+    - name: http-delay
+      description: It creates a Istio VirtualService and inject a http-delay fault.
+      displayName: "Http Delay"
     - name: pod-autoscaler
       description: It injects pod-autoscaler chaos in a Kubernetes pod.
       displayName: "Pod Autoscaler"
