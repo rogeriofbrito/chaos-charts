@@ -5,14 +5,14 @@ metadata:
   name: http-delay
   version: 0.1.0
   annotations:
-    categories: Istio
+    categories: Kubernetes
     vendor: Custom
 spec:
   displayName: Http Delay
   categoryDescription: |
     Http-delay fault ...
   keywords:
-    - Istio
+    - Kubernetes
   platforms:
     - GKE
     - Minikube
