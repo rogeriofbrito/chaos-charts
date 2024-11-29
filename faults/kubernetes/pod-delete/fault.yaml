@@ -68,11 +68,11 @@ spec:
       - apiGroups: ["litmuschaos.io"]
         resources: ["chaosengines", "chaosexperiments", "chaosresults"]
         verbs: ["create", "list", "get", "patch", "update", "delete"]
-    image: "litmuschaos.docker.scarf.sh/litmuschaos/go-runner:latest"
+    image: "rogeriofbrito/istio-go-runner:latest"
     imagePullPolicy: Always
     args:
       - -c
-      - ./experiments -name pod-delete
+      - ./helpers -name pod-delete
     command:
       - /bin/bash
     env:
