@@ -40,4 +40,10 @@ spec:
              ## percentage of total pods to target
             - name: PODS_AFFECTED_PERC
               value: ''
-
+          resources:
+            limits:
+              cpu: 800m
+              memory: 1280Mi
+            requests:
+              cpu: 450m
+              memory: 640Mi
